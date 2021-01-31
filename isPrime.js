@@ -1,4 +1,6 @@
-function prime(num) {
+'use strict'
+
+function isPrime(num) {
     if (num == 0 || num == 1) {
         return false;
     }
@@ -10,8 +12,4 @@ function prime(num) {
     return true
 }
 
-for (var i = 2; i <= 100; i++) {
-    if (prime(i)) {
-        console.log(i)
-    }
-}
+module.exports = isPrime;
